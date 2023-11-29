@@ -17,11 +17,6 @@ function generaGriglia() {
 
 document.getElementById("griglia").innerHTML = generaGriglia();
 
-document.getElementById("generateButton").addEventListener("click", function() {
-    
-    document.getElementById("griglia").innerHTML = generaGriglia();
-}); 
-
 document.getElementById('gioca').addEventListener('click', function(){
     CreaGriglia();
 })
