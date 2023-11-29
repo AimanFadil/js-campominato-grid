@@ -3,3 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#griglia{
+    width: 1000px;
+}
+
+.cella{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+
+}
+
+body{
+    background-color: aquamarine;
+}
