@@ -4,17 +4,37 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: brown;
+}
+.evidenziato{
+    background-color: rgb(0, 140, 255);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.content-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.quadrato{
+    background-color: aqua;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #griglia{
     width: 1000px;
-}
-
-.cella{
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
-
-}
-
-body{
-    background-color: aquamarine;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
