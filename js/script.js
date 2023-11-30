@@ -12,8 +12,9 @@ function CreaGriglia(numeroCelle, RigaCelle){
         let cella = creaCella(i, RigaCelle);
 
         cella.addEventListener('click', function(){
-            this.classList.add('clicked');
+            this.classList.add('evidenziato');
             console.log(this.innerText);
+            
         });
 
         griglia.appendChild(cella);
@@ -45,19 +46,12 @@ function creaNuovoGioco(){
     }
 
     NumCellePerRiga = Math.sqrt(numeroCelle);
+    //moltiplicare riga per riga
 
-    griglia.innerHTML = ''
+    griglia.innerHTML = '';
     CreaGriglia(numeroCelle, NumCellePerRiga);
-    for(let i=1; i<=100; i++){
-        let cella = creaCella(i);
 
-        cella.addEventListener('click', function(){
-            this.classList.add('evidenziato');
-            console.log(this.innerText);
-        });
-
-        griglia.appendChild(cella);
-    }
+    
 }
 
 const bottoneGioco = document.getElementById('gioca')
@@ -65,3 +59,5 @@ const bottoneGioco = document.getElementById('gioca')
 bottoneGioco.addEventListener('click', function(){
     creaNuovoGioco();
 }); 
+
+console.log()
