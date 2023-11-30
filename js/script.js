@@ -7,6 +7,14 @@ function creaCella(num, RigaCelle){
     return quadrato;
 }
 
+function CreaGriglia(){
+    for(let i=1; i<=numeroCelle; i++){
+        let cella = creaCella(i, RigaCelle);
+
+        griglia.appendChild(cella);
+    }
+}
+
 
 
 function creaNuovoGioco(){
